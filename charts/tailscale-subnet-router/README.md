@@ -66,7 +66,7 @@ The command removes all the Kubernetes components associated with the chart and 
 | affinity | object | `{}` | [Affinity](https://kubernetes.io/docs/concepts/configuration/assign-pod-node/#affinity-and-anti-affinity) for pod assignment |
 | fullnameOverride | string | `""` | Optional override for app fullname |
 | image.pullPolicy | string | `"Always"` |  |
-| image.repository | string | `"ghcr.io/tailscale/tailscale:latest"` | **Build your own image and override this!** |
+| image.repository | string | `"ghcr.io/tailscale/tailscale"` | **Chart.AppVersion is used to populate this, override with your own image!** |
 | image.tag | string | `"latest"` |  |
 | imagePullSecrets | list | `[]` | List the secrets containing the Docker creds for images in this Chart |
 | nameOverride | string | `""` | Optional override for app name |
